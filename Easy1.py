@@ -1,12 +1,13 @@
-def length_of_last_word(s):
+#Easy.1  Given a string s consisting of words and spaces, return the length of the last word in the string.
+
+def length_of_lastword(s):
     words = s.split()
     if not words:
         return 0
     return len(words[-1])
-s = input()
-result = length_of_last_word(s)
+s = input("s=")
+result = length_of_lastword(s)
 print(result)
-
 #Algorithm
 '''It first splits the input string into a list of words.
 #It then checks if there are any words in the list. If not, it returns 0.

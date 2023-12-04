@@ -1,6 +1,5 @@
 #You are given a string s. You can convert s to a palindrome by adding characters in front of it.
 def shortest_palindrome(s):
-    # Function to find the longest palindrome prefix
     def find_longest_palindrome_prefix(s):
         rev_s = s[::-1]
         for i in range(len(s)):
@@ -12,15 +11,10 @@ def shortest_palindrome(s):
 
     return find_longest_palindrome_prefix(s)
 
-# Take input from the user
-user_input = input("Enter a string: ")
+user_input = input("s=")
 
-# Call the function with user input
 result = shortest_palindrome(user_input)
-
-# Display the result
-print("Input: s =", user_input)
-print("Output:", result)
+print(result)
 
 #Algorithm
 '''
